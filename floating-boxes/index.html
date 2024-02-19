@@ -3,10 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Floating Boxes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <main>
-        <div></div>
-    </main>
+    <header>
+        <button id="theme-button">
+            <!--<i class="fa-solid fa-sun"></i>--->
+        </button>
+        <section class="main-container">
+            <section class="images-container">
+                <picture class="image-box open" style="background-image:
+                url('https://m.media-amazon.com/images/S/sonata-images-prod/TR_John_Wick_4_CS_UI/f61b4467-c09e-4356-9058-12342c7af526._UR3840,1440_BR-6_SX2880_FMjpg_.jpeg')">
+                    <h3 class="image-title bg-white">John Wick 4</h3>
+                </picture>
+                <picture class="image-box close" style="background-image:
+                url('https://m.media-amazon.com/images/S/sonata-images-prod/TR_Game_of_Thrones_S1_CS_UI/8db1e3d1-0d09-4cce-bf93-57414b8dc8e5._UR3840,1440_BR-6_SX2880_FMjpg_.jpeg')">
+                    <h3 class="image-title bg-white">Game Of Thrones</h3>
+                </picture>
+                <picture class="image-box close" style="background-image:
+                url('https://m.media-amazon.com/images/S/sonata-images-prod/TR_EPHRA_S1_CS_UI/a4ea1e32-d805-4246-9597-28f332e101a9._UR3840,1440_BR-6_SX2880_FMjpg_.jpeg')">
+                    <h3 class="image-title">Euphoria</h3>
+                </picture>
+                <picture class="image-box close" style="background-image:
+                url('https://m.media-amazon.com/images/S/sonata-images-prod/TR_Succession_S1_S3_CS_UI/e61b88fd-be0d-43bc-af14-5fc1e747ecd0._UR3840,1440_BR-6_SX2880_FMjpg_.jpeg')">
+                    <h3 class="image-title bg-white">Succession</h3>
+                </picture>
+            </section>
+            <section class="panning-box">
+                <button class="panning-box-btn previous-image-btn"><</button>
+                <div class="dots">
+                    <!--
+                    <span class="dot selected"></span>
+                    <span class="dot"></span>
+                    --->
+                </div>
+                <button class="panning-box-btn next-image-btn">></button>
+            </section>
+        </section>
+    </header>
+
+    <script src="app.js"></script>
 </body>
 </html>
