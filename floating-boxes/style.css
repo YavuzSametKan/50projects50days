@@ -11,6 +11,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  transition: background-color, color, border, ease 0.2s;
 }
 body.dark {
   background-color: #00050d;
@@ -117,6 +118,7 @@ body.dark .panning-box .dots .dot.selected {
   justify-content: space-between;
   background-color: #ccc;
   padding: 0 6%;
+  transition: background-color, color, border, ease 0.2s;
 }
 .panning-box .panning-box-btn {
   height: 40px;
@@ -125,6 +127,7 @@ body.dark .panning-box .dots .dot.selected {
   color: #666;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color, color, border, ease 0.2s;
 }
 .panning-box .dots {
   height: 40px;
@@ -139,6 +142,7 @@ body.dark .panning-box .dots .dot.selected {
   background-color: #666;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color ease 0.2s;
 }
 .panning-box .dots .dot.selected {
   background-color: #333;
