@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.progress-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.875rem;
+}
+.progress-container .processes-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.progress-container .processes-container:before {
+  content: "";
+  width: 100%;
+  height: 0.188rem;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -2;
+}
+.progress-container .processes-container:after {
+  content: "";
+  width: var(--progress-bar-fillness);
+  height: 0.188rem;
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: width, ease 0.4s;
+}
+.progress-container .processes-container .process {
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.188rem solid #e0e0e0;
+  border-radius: 50%;
+  color: #999;
+  font-weight: bold;
+  background-color: white;
+  transition: border, ease 0.4s;
+}
+.progress-container .processes-container .process.selected {
+  border-color: white;
+  color: white;
+  background-color: #3498db;
+}
+.progress-container .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.progress-container .buttons-container .progress-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.313rem;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.progress-container .buttons-container .progress-btn.disabled {
+  pointer-events: none;
+  background-color: #e0e0e0;
+  color: #999;
+}
+.progress-container .buttons-container .progress-btn:hover {
+  filter: brightness(0.9);
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+}
