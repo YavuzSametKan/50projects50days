@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$process-size : 2.5rem; //default: 40px
+$processes-gap: 3.75rem; //default: 60px
+$progress-border-size: 0.188rem; //default: 3px
+$progress-color: #3498db;
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 22px;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+  }
+}
+
+
+.progress-container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.875rem; //default: 30px
+  .processes-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &:before{
+      content: '';
+      width: 100%;
+      height: $progress-border-size;
+      background-color: #e0e0e0;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      z-index: -2;
+    }
+    &:after{
+      content: '';
+      width: var(--progress-bar-fillness);
+      height: $progress-border-size;
+      background-color: $progress-color;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      z-index: -1;
+      transition: width, ease .4s;
+    }
+    .process{
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: $process-size;
+      height: $process-size;
+      border: $progress-border-size solid #e0e0e0;
+      border-radius: 50%;
+      color: #999;
+      font-weight: bold;
+      background-color: white;
+      transition: border, ease .4s;
+      &.selected{
+        border-color: white;
+        color: white;
+        background-color: $progress-color;
+      }
+    }
+  }
+  .buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    .progress-btn{
+      padding: 0.5rem 1rem;
+      border-radius: 0.313rem; //default: 5px;
+      background-color: $progress-color;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      &.disabled{
+        pointer-events: none;
+        background-color: #e0e0e0;
+        color:#999;
+      }
+      &:hover{
+        filter: brightness(.9);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html{
+    font-size: 14px;
+  }
+}
