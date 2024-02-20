@@ -1,6 +1,6 @@
-# 50project50days
+# Small Frontend Projects
 This repository is a platform created for personal development in the field of web development. 
-The focus is on strengthening my frontend coding skills and laying a solid foundation by developing one project every day for 50 days.
+My focus is on strengthening my front-end coding skills and building a solid foundation.
 Each project is designed to focus on learning a specific concept or skill, thereby enabling me to learn something new every day.
 
 ## Technologies Used
