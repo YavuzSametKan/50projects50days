@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6e94e75-e1b0-4299-a2de-81543f33040c" name="Changes" comment="floating boxes project completed" />
+    <list default="true" id="e6e94e75-e1b0-4299-a2de-81543f33040c" name="Changes" comment="floating boxes project has been updated and the .idea file in it has been deleted" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708341490502</updated>
       <workItem from="1708341491536" duration="26404000" />
-      <workItem from="1708371479015" duration="581000" />
+      <workItem from="1708371479015" duration="866000" />
     </task>
     <task id="LOCAL-00001" summary="floating boxes project completed">
       <option name="closed" value="true" />
@@ -116,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708403362011</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="floating boxes project has been updated and the .idea file in it has been deleted">
+      <option name="closed" value="true" />
+      <created>1708403482027</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708403482027</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +143,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="floating boxes project completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="floating boxes project completed" />
+    <MESSAGE value="floating boxes project has been updated and the .idea file in it has been deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="floating boxes project has been updated and the .idea file in it has been deleted" />
   </component>
 </project>
