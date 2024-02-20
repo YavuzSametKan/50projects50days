@@ -6,7 +6,7 @@ Each project is designed to focus on learning a specific concept or skill, there
 ## Technologies Used
 In addition to fundamental technologies like HTML, CSS, and JavaScript, SASS may also be utilized during this process.
 
-# Projects
+## Projects
 |  #  | Github Link of The Project                                                                                    | Live Demo                                                                         |
 | :-: | --------------------------------------------------------------------------------------------------------------| --------------------------------------------------------------------------------- |
 | 01  | [Floating Boxes](https://github.com/YavuzSametKan/50projects50days/tree/master/floating-boxes)                | [Live Demo](https://codepen.io/Codestronomer/full/dyrLbNL)                        |
