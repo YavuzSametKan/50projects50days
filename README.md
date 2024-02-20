@@ -10,7 +10,7 @@ In addition to fundamental technologies like HTML, CSS, and JavaScript, SASS may
 |  #  | Github Link of The Project                                                                                    | Live Demo                                                                         |
 | :-: | --------------------------------------------------------------------------------------------------------------| --------------------------------------------------------------------------------- |
 | 01  | [Floating Boxes](https://github.com/YavuzSametKan/50projects50days/tree/master/floating-boxes)                | [Live Demo](https://codepen.io/Codestronomer/full/dyrLbNL)                        |
-| 02  | [Floating Boxes](https://github.com/YavuzSametKan/50projects50days/tree/master/progress-steps)                | [Live Demo](https://codepen.io/Codestronomer/full/YzgMNLZ)                        |
+| 02  | [Progress Steps](https://github.com/YavuzSametKan/50projects50days/tree/master/progress-steps)                | [Live Demo](https://codepen.io/Codestronomer/full/YzgMNLZ)                        |
 
 ## Contribution Guidelines
 * You can report bugs or provide suggestions by opening a GitHub issue.
