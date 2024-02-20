@@ -56,7 +56,7 @@ body button {
   top: 50%;
   transform: translateY(-50%);
   z-index: -1;
-  transition: width, ease 0.4s;
+  transition: width, ease 0.5s;
 }
 .progress-container .processes-container .process {
   user-select: none;
@@ -70,7 +70,7 @@ body button {
   color: #999;
   font-weight: bold;
   background-color: white;
-  transition: border, ease 0.4s;
+  transition: border, ease 0.5s;
 }
 .progress-container .processes-container .process.selected {
   border-color: white;
@@ -110,3 +110,5 @@ body button {
     font-size: 14px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

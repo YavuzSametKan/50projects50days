@@ -4,6 +4,7 @@ $process-size : 2.5rem; //default: 40px
 $processes-gap: 3.75rem; //default: 60px
 $progress-border-size: 0.188rem; //default: 3px
 $progress-color: #3498db;
+$progress-transition-time: .5s;
 
 *{
   padding: 0;
@@ -61,7 +62,7 @@ body{
       top:50%;
       transform: translateY(-50%);
       z-index: -1;
-      transition: width, ease .4s;
+      transition: width, ease $progress-transition-time;
     }
     .process{
       user-select: none;
@@ -75,7 +76,7 @@ body{
       color: #999;
       font-weight: bold;
       background-color: white;
-      transition: border, ease .4s;
+      transition: border, ease $progress-transition-time;
       &.selected{
         border-color: white;
         color: white;
