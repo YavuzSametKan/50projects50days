@@ -3,14 +3,35 @@ const progressContainers = document.getElementsByClassName('progress-container')
 Object.values(progressContainers).forEach(progressContainer => {
     const processesContainer = progressContainer.children[0]
     const processes = processesContainer.children
-
-    // for assigning numbers to processes
-    for(let i = 0; i < processes.length; i++){
-        processes[i].textContent = (i + 1).toString();
-    }
-
     const prevBtn = progressContainer.children[1].children[0]
     const nextBtn = progressContainer.children[1].children[1]
+
+    // The first function to run when the page loads
+    ;(()=>{
+        // for assigning numbers to processes
+        for(let i = 0; i < processes.length; i++){
+            processes[i].textContent = (i + 1).toString();
+        }
+
+        // Determination of progress bar fillness when opening the page
+        setProgressBarFillness(processesContainer)
+
+        // If there is no process selected, select the first one
+        if(indexOfStage(processes) === -1)
+            processes[0].classList.add('selected')
+        // If there is a phase selected when the page loads,
+        // it adds the value 'selected' to the classList of all previous phases
+        else{
+            for(let i = indexOfStage(processes) - 1; i >= 0; i--)
+                processes[i].classList.add('selected')
+        }
+
+        // Determining whether the previous and next buttons are disabled when opening the page
+        if(indexOfStage(processes) === 0)
+            btnDisabled(prevBtn)
+        else if(indexOfStage(processes) === processes.length - 1)
+            btnDisabled(nextBtn)
+    })()
 
     prevBtn.addEventListener('click', ()=>{
         try{
@@ -41,22 +62,6 @@ Object.values(progressContainers).forEach(progressContainer => {
         btnEnabled(prevBtn)
         setProgressBarFillness(processesContainer)
     })
-
-    // The first function to run when the page loads
-    window.onload = () => {
-        // Determination of progress bar fillness when opening the page
-        setProgressBarFillness(processesContainer)
-
-        // If there is no process selected, select the first one
-        if(indexOfStage(processes) === -1)
-            processes[0].classList.add('selected')
-
-        // Determining whether the previous and next buttons are disabled when opening the page
-        if(indexOfStage(processes) === 0)
-            btnDisabled(prevBtn)
-        else if(indexOfStage(processes) === processes.length - 1)
-            btnDisabled(nextBtn)
-    }
 })
 
 // for finding the last selected process index
