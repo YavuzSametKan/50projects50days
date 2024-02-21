@@ -41,8 +41,15 @@ body.dark .panning-box .dots .dot.selected {
   background-color: #004794;
 }
 
-.main-container {
-  background-color: #666666;
+#carousel1 {
+  height: 60vh;
+}
+
+#carousel2 {
+  height: 80vh;
+}
+
+#carousel3 {
   height: 100vh;
 }
 
