@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 32px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #002f8a 0%, #0053f5 100%);
+  -webkit-transition: 0.2s;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 40px;
+  border: 3px solid white;
+  outline: 3px solid #222;
+  border-radius: 12px;
+  background: #0053f5;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 12px;
+  height: 40px;
+  border: 3px solid white;
+  outline: 3px solid #222;
+  border-radius: 12px;
+  background: #0053f5;
+  cursor: pointer;
+}
+
+.color-picker {
+  height: 300px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 0 20px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.color-picker form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.color-picker form .hex-code {
+  display: flex;
+  gap: 15px;
+}
+.color-picker form .hex-code label {
+  position: relative;
+}
+.color-picker form .hex-code label input {
+  width: 130px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0 0 0 30px;
+  font-size: 18px;
+  color: #666;
+}
+.color-picker form .hex-code label i {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 800;
+  opacity: 0.3;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.color-picker form .hex-code button {
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.color-picker form .hex-code button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.color-picker form .red {
+  background: linear-gradient(90deg, black 0%, red 100%);
+}
+.color-picker form .red::-webkit-slider-thumb {
+  background: red;
+}
+.color-picker form .red::-moz-range-thumb {
+  background: red;
+}
+.color-picker form .green {
+  background: linear-gradient(90deg, black 0%, green 100%);
+}
+.color-picker form .green::-webkit-slider-thumb {
+  background: green;
+}
+.color-picker form .green::-moz-range-thumb {
+  background: green;
+}
+.color-picker form .blue {
+  background: linear-gradient(90deg, black 0%, blue 100%);
+}
+.color-picker form .blue::-webkit-slider-thumb {
+  background: blue;
+}
+.color-picker form .blue::-moz-range-thumb {
+  background: blue;
+}
+.color-picker form .alpha {
+  background: linear-gradient(90deg, transparent 0%, gray 100%);
+}
+.color-picker form .alpha::-webkit-slider-thumb {
+  background: gray;
+}
+.color-picker form .alpha::-moz-range-thumb {
+  background: gray;
+}
+
+/*# sourceMappingURL=style.css.map */
