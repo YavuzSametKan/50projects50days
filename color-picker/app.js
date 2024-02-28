@@ -8,8 +8,23 @@ const hexInput = document.querySelector('.hex-code input')
 const changeColorBtn = document.querySelector('#change-color')
 const copyHexBtn = document.querySelector('#copy-hex')
 
-if(!localStorage.getItem('rgba'))
+if(!localStorage.getItem('rgba')){
     localStorage.setItem('rgba', '255,255,255,1')
+    hexInput.value = 'ffffffff'
+} else {
+    let rgba = localStorage.getItem('rgba').split(',')
+    rgba = {
+        red: rgba[0],
+        green: rgba[1],
+        blue: rgba[2],
+        alpha: rgba[3]
+    }
+    hexInput.value = rgbaToHex(rgba)
+    rangeInputs.red.value = rgba.red
+    rangeInputs.green.value = rgba.green
+    rangeInputs.blue.value = rgba.blue
+    rangeInputs.alpha.value = rgba.alpha
+}
 
 const setBg = () => document.body.style.background = `rgba(${localStorage.getItem('rgba')})`
 setBg()
@@ -38,7 +53,7 @@ const hexToRgba = hex => {
     }
 }
 
-const rgbaToHex = rgbaObj => {
+function rgbaToHex(rgbaObj){
     const r = parseInt(rgbaObj.red)
     const g = parseInt(rgbaObj.green)
     const b = parseInt(rgbaObj.blue)
@@ -61,7 +76,7 @@ const rgbaToHex = rgbaObj => {
 
     const toHex = (c) => {
         const hex = c.toString(16)
-        return hex.length == 1 ? '0' + hex : hex
+        return hex.length === 1 ? '0' + hex : hex
     };
 
     const hex = toHex(r) + toHex(g) + toHex(b) + toHex(a)
