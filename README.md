@@ -11,6 +11,7 @@ In addition to fundamental technologies like HTML, CSS, and JavaScript, SASS may
 | :-: | --------------------------------------------------------------------------------------------------------------| --------------------------------------------------------------------------------- |
 | 01  | [Floating Boxes](https://github.com/YavuzSametKan/50projects50days/tree/master/floating-boxes)                | [Live Demo](https://codepen.io/Codestronomer/full/dyrLbNL)                        |
 | 02  | [Progress Steps](https://github.com/YavuzSametKan/50projects50days/tree/master/progress-steps)                | [Live Demo](https://codepen.io/Codestronomer/full/YzgMNLZ)                        |
+| 03  | [Color Picker](https://github.com/YavuzSametKan/small_frontend_projects/tree/master/color-picker)             | [Live Demo](https://codepen.io/Codestronomer/full/QWPLwoZ)                        |
 
 ## Contribution Guidelines
 * You can report bugs or provide suggestions by opening a GitHub issue.
